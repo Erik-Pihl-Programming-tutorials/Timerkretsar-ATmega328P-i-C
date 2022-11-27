@@ -22,7 +22,6 @@ ISR (TIMER0_OVF_vect)
    return;
 }
 
-
 /********************************************************************************
 * ISR (TIMER1_COMPA_vect): Avbrottsrutin för Timer 1 i CTC Mode, där avbrott
 *                          sker var 0.128:e ms när räknaren räknat upp till 256.

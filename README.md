@@ -1,4 +1,4 @@
-# Timerkretsar för ATmega328P i C
+# Timerkretsar - ATmega328P i C
 Implementering av timerkretsar Timer 0 - Timer 2 för timergenererade avbrott.
 Specifikt används respektive timerkrets för att toggla var sin lysdiod LED1 - LED3
 anslutna till pin 8 - 10 (PORTB0 - PORTB2) efter en viss tid enligt nedan:
