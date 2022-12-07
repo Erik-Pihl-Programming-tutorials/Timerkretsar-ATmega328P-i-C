@@ -1,14 +1,14 @@
 /********************************************************************************
-* interrupts.c: InnehÂller avbrottsrutiner.
+* interrupts.c: Inneh√•ller avbrottsrutiner.
 ********************************************************************************/
 #include "header.h"
 
 /********************************************************************************
-* ISR (TIMER0_OVF_vect): Avbrottsrutin fˆr Timer 0 i Normal Mode, d‰r avbrott
-*                        sker var 0.128:e ms vid overflow av r‰knaren TCNT0.
-*                        Varje exekverat avbrott r‰knas via variabeln counter0.
+* ISR (TIMER0_OVF_vect): Avbrottsrutin f√∂r Timer 0 i Normal Mode, d√§r avbrott
+*                        sker var 0.128:e ms vid overflow av r√§knaren TCNT0.
+*                        Varje exekverat avbrott r√§knas via variabeln counter0.
 *                        Efter 100 ms (ca 781 avbrott) togglas lysdiod 1 och
-*                        r‰knaren nollst‰lls infˆr n‰sta uppr‰kning.
+*                        r√§knaren nollst√§lls inf√∂r n√§sta uppr√§kning.
 ********************************************************************************/
 ISR (TIMER0_OVF_vect)
 {
@@ -23,11 +23,11 @@ ISR (TIMER0_OVF_vect)
 }
 
 /********************************************************************************
-* ISR (TIMER1_COMPA_vect): Avbrottsrutin fˆr Timer 1 i CTC Mode, d‰r avbrott
-*                          sker var 0.128:e ms n‰r r‰knaren r‰knat upp till 256.
-*                          Varje exekverat avbrott r‰knas via variabeln counter1.
+* ISR (TIMER1_COMPA_vect): Avbrottsrutin f√∂r Timer 1 i CTC Mode, d√§r avbrott
+*                          sker var 0.128:e ms n√§r r√§knaren r√§knat upp till 256.
+*                          Varje exekverat avbrott r√§knas via variabeln counter1.
 *                          Efter 200 ms (ca 1563 avbrott) togglas lysdiod 2 och
-*                          r‰knaren nollst‰lls infˆr n‰sta uppr‰kning.
+*                          r√§knaren nollst√§lls inf√∂r n√§sta uppr√§kning.
 ********************************************************************************/
 ISR (TIMER1_COMPA_vect)
 {
@@ -42,11 +42,11 @@ ISR (TIMER1_COMPA_vect)
 }
 
 /********************************************************************************
-* ISR (TIMER2_OVF_vect): Avbrottsrutin fˆr Timer 2 i Normal Mode, d‰r avbrott
-*                        sker var 0.128:e ms vid overflow av r‰knaren TCNT0.
-*                        Varje exekverat avbrott r‰knas via variabeln counter2.
+* ISR (TIMER2_OVF_vect): Avbrottsrutin f√∂r Timer 2 i Normal Mode, d√§r avbrott
+*                        sker var 0.128:e ms vid overflow av r√§knaren TCNT2.
+*                        Varje exekverat avbrott r√§knas via variabeln counter2.
 *                        Efter 500 ms (ca 3906 avbrott) togglas lysdiod 3 och
-*                        r‰knaren nollst‰lls infˆr n‰sta uppr‰kning.
+*                        r√§knaren nollst√§lls inf√∂r n√§sta uppr√§kning.
 ********************************************************************************/
 ISR (TIMER2_OVF_vect)
 {
